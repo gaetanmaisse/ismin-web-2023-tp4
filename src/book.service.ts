@@ -12,7 +12,7 @@ export class BookService implements OnModuleInit {
   constructor(private readonly httpService: HttpService) {}
 
   async onModuleInit() {
-    await Promise.all([this.loadBooksFromFile(), this.loadBooksFromServer()]);
+    //await Promise.all([this.loadBooksFromFile(), this.loadBooksFromServer()]);
     console.log(`Storage contains ${this.storage.size} books`);
   }
 
